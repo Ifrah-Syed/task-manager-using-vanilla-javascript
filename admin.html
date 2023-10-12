@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>Admin Portal</h1>
+    <h2>Create User</h2>
+    <form id="userForm" action="#" method="post">
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required><br><br>
+
+        <label for="newID">ID:</label>
+        <input type="text" id="newID" name="newID" required><br><br>
+
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required><br><br>
+
+        <input type="submit" value="Create User" id="createUserButton">
+
+
+        <button id="showUsersButton" class="btn">Show Users</button>
+        <div id="userList"></div>
+
+        <button id="showAllTasksButton" class="btn">Show All Tasks</button>
+        <div id="taskList"></div>
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

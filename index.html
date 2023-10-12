@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form id="loginForm" action="#" method="post" onsubmit="return login()"></form>
+     <div id="mainloginform">
+        <h2>Login Form</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        
+        <input type="submit" value="Login" id="submitlogin" onclick="login()" >
+     </div>
+        <div id="userwelcome" style="display: none;">
+        <h1>UserPortal</h1>
+        <br>
+        <br>
+        <h2>Welcome, <span id="loggedInUsername"></span></h2>
+        <h3>Here's your task update</h3>
+    
+        </div>
+
+
+        <div id="taskDetails" style="display: none;">
+        <h3>Task Name: <span id="taskName">Your Task</span></h3>
+         <p>Time Left: <span id="taskTimer" class="timer"></span></p>
+        </div>
+
+          
+    </form>
+
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
